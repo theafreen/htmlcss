@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100vh;
+        }
+        .container button {
+           cursor: pointer; 
+           background-color: rgb(56, 84, 0);
+           border-radius: 3px;
+            width: 100px;
+            height: 40px;
+            border: none;
+            color: aliceblue;
+            font-size: 3px;
+            transition: .5s;
+            transform: translate(20px);
+        }
+        .c0:hover {
+            background-color: rgb(15, 27, 28);
+             transform: scale(7);
+             /* transform: skew(30deg); */
+            /* transform: rotate(45deg); */ */
+            /* transform : translate(-20px 30px); */
+        }
+        .c1:hover{
+            transform: scale(7);
+            background-color: rgb(221, 6, 46);  
+        }
+        .c2:hover{
+            transform: scale(7);
+            background-color: rgb(3, 82, 94); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="c0">Hey are you ok?</button>
+        <button class="c1">Do you need anything😌?</button>
+        <button class="c2">Padhai karle bhai warna larki nhi milegi🤡</button>
+    </div>
+</body>
+</html>
